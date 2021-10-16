@@ -30,3 +30,11 @@ On linux install `libpq-dev`
 
 ### Serve
 `rake run:serve`
+
+## Production
+
+Build docker image
+`docker build . -t song-test-api`
+Push to docker hub
+`docker image tag song-test-api hideodaikoku/song-test-api`
+`docker image push hideodaikoku/song-test-api`
